@@ -6,7 +6,7 @@
 /*   By: abchikhi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 14:35:29 by abchikhi          #+#    #+#             */
-/*   Updated: 2023/10/31 14:39:26 by abchikhi         ###   ########.fr       */
+/*   Updated: 2023/11/15 00:48:11 by abchikhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,3 +23,9 @@ void	*ft_memset(void *b, int c, size_t len)
 		ptr[i++] = c;
 	return (b);
 }
+// #include <string.h>
+// int main(){
+// 	int arr[] = {0, 0, 0};
+// 	ft_memset(arr, 1, 0);
+// 	memset(arr, 1, 0);
+// }

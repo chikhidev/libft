@@ -36,22 +36,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 // #include <stdio.h>
 // #include <string.h>
 // int main(){
-// 	unsigned char *dst = malloc((sizeof(char) * 6));
-// 	unsigned char *src = malloc((sizeof(char) * 6));
-
-// 	dst[0] = 'u';
-// 	dst[1] = 'x';
-// 	dst[2] = 'w';
-// 	dst[3] = 't';
-// 	dst[4] = 'r';
-// 	dst[5] = '\0';
-// 	src[0] = 'x';
-// 	src[1] = 'x';
-// 	src[2] = 'x';
-// 	src[3] = 'x';
-// 	src[4] = 'x';
-// 	src[5] = '\0';
-// 	// printf("%s\n", ft_memcpy(dst, NULL, 9));
-// 	printf("%s\n", memcpy(dst, NULL, 9));
+// 	printf("%s\n", ft_memcpy(0, 0, 0));
+// 	// printf("%s\n", memcpy(0, NULL, 9));
 // 	return (0); 
 // }

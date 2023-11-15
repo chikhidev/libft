@@ -21,3 +21,10 @@ size_t	ft_strlen(const char *str)
 		i++;
 	return (i);
 }
+
+// #include <string.h>
+// int main()
+// {
+// 	ft_strlen(0);
+// 	strlen(0);
+// }

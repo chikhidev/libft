@@ -31,3 +31,11 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	substring[len] = '\0';
 	return (substring);
 }
+
+// #include <string.h>
+// #include <stdio.h>
+// int main()
+// {
+// 	char *ptr = "hello there!";
+// 	printf("%s\n", ft_substr(NULL, 4, 0));
+// }

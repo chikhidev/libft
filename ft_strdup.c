@@ -25,3 +25,10 @@ char	*ft_strdup(const char *s1)
 	ft_memcpy((void *)clone, s1, len + 1);
 	return ((char *)clone);
 }
+
+// #include <stdio.h>
+// #include <string.h>
+// int main(){
+// 	// printf("mine: %s\n", ft_strdup(NULL));
+// 	printf("theirs: %s\n", strdup(NULL));
+// }

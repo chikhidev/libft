@@ -17,6 +17,8 @@ int	ft_lstsize(t_list *lst)
 	int		i;
 	t_list	*holder;
 
+	if (!lst)
+		return (0);
 	i = 0;
 	holder = lst;
 	while (holder != NULL)

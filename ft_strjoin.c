@@ -18,6 +18,12 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	int		len2;
 	char	*res;
 
+	if (!s1 && !s2)
+		return (NULL);
+	else if (!s1 && s2)
+		return (ft_strdup(s2));
+	else if (s1 && !s2)
+		return (ft_strdup(s1));
 	len1 = ft_strlen(s1);
 	len2 = ft_strlen(s2);
 	res = malloc(sizeof(char) * (len1 + len2 + 1));
@@ -28,3 +34,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	res[len1 + len2] = '\0';
 	return (res);
 }
+
+// #include <stdio.h>
+// int main(){
+// 	printf("Concat: %s",ft_strjoin("hey", NULL));
+// }
