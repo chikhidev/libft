@@ -10,18 +10,18 @@ NAME = libft.a
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	ar rcs $@ $^
+	@ar rcs $@ $^
 
 bonus: $(OBJSB)
 	
 $(OBJS): $(SRCS) $(HEADERFILE)
-	$(CC) $(CFLAGS) -c $(SRCS)
+	@$(CC) $(CFLAGS) -c $(SRCS)
 
 $(OBJSB): $(SRCSB) $(HEADERFILE)
-	$(CC) $(CFLAGS) -c $(SRCSB)
-	ar rcs $(NAME) $(OBJSB)
+	@$(CC) $(CFLAGS) -c $(SRCSB)
+	@ar rcs $(NAME) $(OBJSB)
 clean:
-	rm -f $(OBJS) $(OBJSB)
+	@rm -f $(OBJS) $(OBJSB)
 fclean: clean
-	rm -f $(NAME)
+	@rm -f $(NAME)
 re: fclean $(NAME)
